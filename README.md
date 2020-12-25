@@ -16,17 +16,23 @@ The environment is considered solved when the agent gets a score of +13 over 100
 
 ## Getting started
 
-This repository requires a Mac.
-
-1. Create a new [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) enviornment.
+1. Download the project environment from [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation#getting-started), and unzip it in this repository.
+2. Create a new [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) enviornment.
 ```
 conda create --name hoonji_proj1 python=3.6
 source activate hoonji_proj1
 ```
-2. Install [OpenAI gym](https://github.com/openai/gym)
-3. Create an IPython kernel
+3. Install [OpenAI gym](https://github.com/openai/gym)
+4. Install other dependencies using Udacity's deep-reinforcement learning repository:
+```
+git clone https://github.com/udacity/deep-reinforcement-learning.git
+cd deep-reinforcement-learning/python
+pip install .
+```
+5. Create an IPython kernel for use by the jupyter notebook.
 ```
 python -m ipykernel install --user --name hoonji_proj1 --display-name "hoonji_proj1"
 ```
-4. Run a jupyter notebook server using `jupyter notebook`. Open the Navigation.ipynb file.
-5. Use the `Cell > Run All` menu item to train the agent and see it in action.
+6. Run a jupyter notebook server using `jupyter notebook`. Open the Navigation.ipynb file.
+7. Change the filename of the UnityEnvironment depending on your OS.
+8. Use the `Cell > Run All` menu item to train the agent and see it in action.
