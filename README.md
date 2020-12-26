@@ -22,7 +22,7 @@ The environment is considered solved when the agent gets a score of +13 over 100
 conda create --name hoonji_proj1 python=3.6
 source activate hoonji_proj1
 ```
-3. Install [OpenAI gym](https://github.com/openai/gym)
+3. Install [OpenAI gym](https://github.com/openai/gym), then install the [classic control](https://github.com/openai/gym#classic-control) and [box2d](https://github.com/openai/gym#box2d) environment groups.
 4. Install other dependencies using Udacity's deep-reinforcement learning repository:
 ```
 git clone https://github.com/udacity/deep-reinforcement-learning.git
